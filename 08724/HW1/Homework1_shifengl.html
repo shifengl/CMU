@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Oakland Book Club</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Shifeng Lin">
+    <meta name="andrewid" content="shifengl">
+  </head>
+  <body>
+    <!-- Contain the reading_dog.jpg at the top of the image -->
+    <img src="reading_dog.jpg" alt="Picture of a cute dog.">
+    <h1>Oakland Book Club</h1>
+    <!-- Main section -->
+    <section>
+      <!-- The first subsection consists of the heading "What We Are Reading Now" as well as the table -->
+      <section>
+        <header>
+          <h2>What We Are Reading Now</h2>
+        </header>
+        <table border="1">
+          <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>The Catcher in the Rye</td>
+            <td>J.D.Salinger</td>
+            <td><a href="http://www.amazon.com/Catcher-Rye-J-D-Salinger/dp/0316769487/" target="_blank">0316769487</a></td>
+          </tr>
+          <tr>
+            <td>The Great Gatsby</td>
+            <td>F.Scott Fitzgerald</td>
+            <td><a href="http://www.amazon.com/The-Great-Gatsby-Scott-Fitzgerald/dp/0743273567/" target="_blank">0743273567</a></td>
+          </tr>
+          <tr>
+            <td>A Seperate Peace</td>
+            <td>John Knowles</td>
+            <td><a href="http://www.amazon.com/A-Separate-Peace-John-Knowles/dp/0743253973/" target="_blank">0743253973</a></td>
+          </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- The second subsection consists of the heading "Our Favorite Genres", the text below the heading shown in the screenshot, as well as the inline SVG image -->
+      <section>
+        <header>
+          <h2>Our Favorite Genres</h2>
+        </header>
+        <p>
+          We recently conducted a poll among our members and found out what our favorite book genres are. Here are the results:
+        </p>
+        <svg width="600" height="400">
+          <!-- 3 lines -->
+          <line x1="50" y1="80" x2="570" y2="80" stroke-width="2" stroke="rgb(0,0,0)"/>
+          <line x1="50" y1="160" x2="570" y2="160" stroke-width="2" stroke="rgb(0,0,0)"/>
+          <line x1="50" y1="240" x2="570" y2="240" stroke-width="2" stroke="rgb(0,0,0)"/>
+          <!-- 5 rectangles -->
+          <rect x="100" y="120" width="30" height="120" fill="rgb(255, 0, 0)"/>
+          <rect x="190" y="0" width="30" height="240" fill="rgb(0, 255, 0)"/>
+          <rect x="280" y="80" width="30" height="160" fill="rgb(0, 0, 255)"/>
+          <rect x="370" y="200" width="30" height="40" fill="rgb(0, 100, 255)"/>
+          <rect x="460" y="144" width="30" height="96" fill="orange"/>
+          <!-- 3 scales -->
+          <text x="10" y="240" fill="rgb(0, 0, 0)">0</text>
+          <text x="10" y="160" fill="rgb(0, 0, 0)">50</text>
+          <text x="10" y="80" fill="rgb(0, 0, 0)">100</text>
+          <!-- 5 labels -->
+          <text x="60" y="325" transform="rotate(-45 60 325)" fill="rgb(0, 0, 0)">Biographies</text>
+          <text x="185" y="290" transform="rotate(-45 185 290)" fill="rgb(0, 0, 0)">Sci-Fi</text>
+          <text x="265" y="300" transform="rotate(-45 265 300)" fill="rgb(0, 0, 0)">Humor</text>
+          <text x="345" y="305" transform="rotate(-45 345 305)" fill="rgb(0, 0, 0)">Mystery</text>
+          <text x="450" y="295" transform="rotate(-45 450 295)" fill="rgb(0, 0, 0)">Other</text>
+        </svg>
+      </section>
+      <!-- The third subsection consists of the heading "About Us", the text describing the club, an unordered list of benefits, as well as the information for contacting the club director -->
+      <section>
+        <header>
+          <h2>About Us</h2>
+        </header>
+        <p>
+          We are a group of diverse individuals who all share one common trait - the love of a good book! If you also love good books, why don't you consider joining our group? Some of the benefits to joining are:
+        </p>
+        <ul>
+          <li>You get to read lots of great books!</li>
+          <li>You get to meet new and interesting people</li>
+          <li>You get to visit lots of different locations in beautiful Oakland!</li>
+        </ul>
+        <p>
+          For more information please contact Pauline using the following information or fill out the form at the bottom of the pages:
+        </p>
+        <p>
+          Pauline Smith
+          <br>
+          Oakland Book Club Director
+          <br>
+          9876 Forbes Avenue
+          <br>
+          Pittsburgh, PA 15213
+          <br>
+          (412)998-5454
+        </p>
+      </section>
+      <!-- The fourth subsection consists of the "Contact Us" heading as well as a form for submitting information -->
+      <section>
+        <header>
+          <h2>Contact Us</h2>
+        </header>
+        <form name="userInfoForm" action="http://csw08724.appspot.com/hw1.do" method="post">
+          <fieldset>
+            <legend>Your Information</legend>
+            <div>
+              <label>Name:*&nbsp;
+                <input type="text" id="inputUserName" name="name" required autofocus placeholder="Joe Smith">
+              </label>
+            </div>
+            <div>
+              <label>Phone#:&nbsp;
+                <input type="tel" id="inputUserPhone" name="phone">
+              </label>
+            </div>
+            <div>
+              <label for="inputEmail">Email*:&nbsp;</label>
+                <input style="display: inline;" type="email" id="inputEmail" name="email" required placeholder="joe.smith@foo.com">
+            </div>
+            <div>
+              <label>How did you hear about us?:&nbsp;
+              <select name="howheard">
+                <option value="Website">Website</option>
+                <option value="Friend/Relative">Friend/Relative</option>
+                <option value="Other">Other</option>
+              </select>
+              </label>
+            </div>
+            <input type="submit" value="Submit Form">
+            <input type="reset" value="Reset Form">
+          </fieldset>
+        </form>
+      </section>
+    </section>
+  </body>
+</html>
+
+
